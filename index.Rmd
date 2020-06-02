@@ -170,6 +170,7 @@ Elements to include:
 .blank[blank line]
 
 ![](figures/flame.png)
+
 ]
 .pull-right[
 .blank[blank line]
@@ -191,6 +192,80 @@ Elements to include:
 
 ] 
 
+---
+
+class: center middle
+
+.dramatic[
+Lets 
+Build A
+Repo!
+]
+
+---
+
+## Create a new repo
+
+.w-75.h-center[
+![](figures/github_create_repo.png)
+]
+
+---
+
+## Filling up the repo
+
+.h-center[
+```
+$ cd /Documents/github/talks_folder/github_for_labs
+$ git init
+$ git remote add origin https://github.com/jhcreed/github_for_labs.git
+$ git add *
+$ git commit -m "inital commit" 
+$ git push -u origin master
+```
+]
+
+.w-70.h-center[
+![](figures/github_first_commit.png)
+]
+
+---
+
+## Netlify
+
+Netlify is a static website generator. It allows users to create webpages through GitHub and is used for publishing slides and help pages. To use netlify:
++ Create a Netlify account 
++ Push your code to GitHub 
++ Connect your GitHub repo to your Netlify account 
++ .accent-orange[Set up continuous integration]
++ .accent-orange[Add a custom domain]
+
+.w-50.h-center[
+![](figures/netlify.png)
+]
+
+---
+
+## pkgdown
+
+pkgdown is a tool for creating a website for your package/project based on the GitHub repo. 
++ README -> Homepage
++ vignettes -> Articles
++ man -> Reference
+
+```{r eval=FALSE}
+install.packages("pkgdown")
+
+# Run once to configure pkgdown for your repo
+usethis::use_pkgdown()
+
+# To build site
+pkgdown::build_site()
+```
+
+.w-50.h-center[
+![](figures/pkgdown.png)
+]
 
 ---
 
@@ -198,6 +273,8 @@ Elements to include:
 
 + [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/)
 + [Happy Git and GitHub for the useR](https://happygitwithr.com)
++ [Basic Git commands](https://github.com/joshnh/Git-Commands)
++ [Git Command Explorer](https://gitexplorer.com)
 
 
 ```{css, echo=FALSE}
@@ -285,7 +362,7 @@ Elements to include:
 
 .dramatic p {
   font-size: 145px;
-  color: #00bfff ;
+  color: #f9850a ;
   margin-top: 0;
   margin-bottom: 0;
 }
