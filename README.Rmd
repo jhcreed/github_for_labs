@@ -1,0 +1,29 @@
+---
+output: github_document
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  # fig.path = "figures/",
+  out.width = "100%"
+)
+
+
+library(emo)
+```
+
+
+# Git for Labs
+
+Jordan Creed
+
+`r emo::ji("tv")` [View Slides]()
+
+`r emo::ji("calendar")` June 03, 2020
+
+`r emo::ji("round_pushpin")` Moffitt Cancer Center, Tampa, FL
+
+`r emo::ji("star")` What it's about
+
