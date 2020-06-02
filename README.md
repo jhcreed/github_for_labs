@@ -3,10 +3,11 @@
 
 Jordan Creed
 
-📺 [View Slides]()
+📺 [View Slides](https://github-for-labs.netlify.app/#1)
 
 📆 June 03, 2020
 
 📍 Moffitt Cancer Center, Tampa, FL
 
-⭐ What it’s about
+⭐ I will cover the basics of GitHub and how it can be incorporated into
+common academic labs’ workflow.

@@ -19,11 +19,11 @@ library(emo)
 
 Jordan Creed
 
-`r emo::ji("tv")` [View Slides]()
+`r emo::ji("tv")` [View Slides](https://github-for-labs.netlify.app/#1)
 
 `r emo::ji("calendar")` June 03, 2020
 
 `r emo::ji("round_pushpin")` Moffitt Cancer Center, Tampa, FL
 
-`r emo::ji("star")` What it's about
+`r emo::ji("star")` I will cover the basics of GitHub and how it can be incorporated into common academic labs' workflow. 
 
