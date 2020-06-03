@@ -243,9 +243,21 @@ $ git push -u origin master
 
 ## Diff
 
+.w-75.h-center[
+![](figures/git_diff.png)
+]
+
 ---
 
 ## GitHub Actions 
+
+.accent-orange[GitHub actions] trigger automatic steps after interactions with GitHub. These steps are set up in a `yaml` file (often inside a `.github/workflows` folder in the repo). 
+
+Most popular actions: 
++ Continuous integration (CI)
++ rendering (pkgdown, bookdown, blogdown)
+
+Actions are available within R or from 3rd parties throught the GitHub [Marketplace](https://github.com/marketplace?type=actions). Some actions are language specific, others are more general (e.g. codecov).  
 
 ---
 
@@ -266,7 +278,7 @@ Netlify is a static website generator. It allows users to create webpages throug
 
 ## pkgdown
 
-pkgdown is a tool for creating a website for your package/project based on the GitHub repo. 
+pkgdown is a tool for creating a website for your package/project based on the GitHub repo. Pages are often deployed through a `gh-pages` branch. 
 + README -> Homepage
 + vignettes -> Articles
 + man -> Reference
@@ -277,6 +289,9 @@ install.packages("pkgdown")
 # Run once to configure pkgdown for your repo
 usethis::use_pkgdown()
 
+# Add the github action
+usethis:::use_github_action(url = "https://raw.githubusercontent.com/r-lib/actions/master/examples/pkgdown.yaml")
+
 # To build site
 pkgdown::build_site()
 ```
@@ -285,6 +300,19 @@ pkgdown::build_site()
 ![](figures/pkgdown.png)
 ]
 
+---
+
+## Continuous Integration (CI)
+
+Continuous integration forces all commits, pull requests, and branches to run through `R CMD check`, while some versions of CI can include code coverage and unit testing. 
+
+Various options are available across OS:
++ Travis CI (Linux and Mac OSX)
++ AppVeyor CI (Windows)
++ Circle CI (Linux and Mac OSX)
++ .accent-orange[GitHub Actions (Linux, Mac OSX, Windows)]
+
+R packages `usethis` and `tic` are available for configuring CI
 ---
 
 ## Additional Resources 
