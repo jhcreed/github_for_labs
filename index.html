@@ -47,19 +47,23 @@ class: center middle hide-count hide-logo
 
 .accent-orange[Branches] are independent lines of development
 
-Both .accent-orange[GitHub] and .accent-orange[GitLab] use .accent-orange[git] for code versioning within their service. Additional differences exist between the two concerning terminology, popularity, continuous integration and 3rd party software. 
+.accent-orange[Commit] is a change saved to the repo - checkpoint of all the chnages up to this point 
+
+.accent-orange[Staged] changes are changes that will be included in the next commit, while .accent-orange[unstaged] changes will not be included in the next commit. 
+
+⚠️ Both .accent-orange[GitHub] and .accent-orange[GitLab] use .accent-orange[git] for code versioning within their service. Additional differences exist between the two concerning terminology, popularity, continuous integration and 3rd party software. 
 
 ---
 
 ## GitHub as a project manager
 
 .pull-left[
-+ contain all files and their histories
-+ access most up-to-date versions
-+ change/modify files without risk of harming anything
-+ set restriction to who can access/edit projects 
-+ track progress
-+ single location for all communication/files/deliverables 
++ Contain all files and their histories
++ Access most up-to-date versions
++ Change/modify files without risk of harming anything
++ Set restriction to who can access/edit projects 
++ Track progress
++ Single location for all communication/files/deliverables 
 ]
 
 .pull-right[
@@ -93,6 +97,7 @@ Ways we can use issues in our workflow:
 
 # Basic set-up
 
+.pull-left[
 1. Register for a [GitHub](https://github.com) account (Free!)
 2. .accent-orange[Install/update R and RStudio]
 3. Install Git (OS-dependent)
@@ -105,6 +110,11 @@ Ways we can use issues in our workflow:
     + SourceTree
     + GitHub Desktop
     + GitUp
+]
+
+.pull-right[
+![](figures/make_it_work.gif)
+]
     
 🤷 There are no style points in Git so simply use whatever system works best for you 
 
@@ -175,7 +185,7 @@ Elements to include:
 7. Dont jump to one large commit 
 8. Avoid monster pulls 
 9. Utilize 3rd party add-ins
-10. Treat 
+10. Keep in consistent/organized
 
 ] 
 
@@ -215,6 +225,14 @@ $ git push -u origin master
 .w-70.h-center[
 ![](figures/github_first_commit.png)
 ]
+
+---
+
+## Diff
+
+---
+
+## GitHub Actions 
 
 ---
 
@@ -259,10 +277,18 @@ pkgdown::build_site()
 
 ## Additional Resources 
 
+Git/GitHub basics 
 + [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/)
 + [Happy Git and GitHub for the useR](https://happygitwithr.com)
+
+Git commands 
 + [Basic Git commands](https://github.com/joshnh/Git-Commands)
 + [Git Command Explorer](https://gitexplorer.com)
++ [10 Git commands in Rstudio](https://rviews.rstudio.com/2020/04/23/10-commands-to-get-started-with-git/)
+
+GitHub Actions 
++ [Actions Sandbox](https://ropenscilabs.github.io/actions_sandbox/)
+
 
 
 &lt;style type="text/css"&gt;
